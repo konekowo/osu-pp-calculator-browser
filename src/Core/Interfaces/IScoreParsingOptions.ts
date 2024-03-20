@@ -3,9 +3,9 @@
  */
 export interface IScoreParsingOptions {
   /**
-   * Custom replay file URL.
+   * Custom replay file buffer.
    */
-  replayURL?: string;
+  replayBuffer?: Uint8Array;
 
   /**
    * Output replay life bar if replay file is present?

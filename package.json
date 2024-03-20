@@ -21,7 +21,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-typescript": "^8.3.2",
-    "@types/md5": "^2.3.2",
+    "@types/md5": "^2.3.5",
     "@types/node": "^17.0.31",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
@@ -40,10 +40,12 @@
   "peerDependencies": {
     "osu-catch-stable": "^4.0.0",
     "osu-classes": "^3.0.1",
-    "osu-downloader": "^0.8.1",
     "osu-mania-stable": "^5.0.0",
     "osu-parsers": "^4.1.4",
     "osu-standard-stable": "^5.0.0",
     "osu-taiko-stable": "^5.0.0"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
   }
 }

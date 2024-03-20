@@ -156,7 +156,7 @@ export class ScoreCalculator {
   }
 
   private async _parseOrSimulateScore(options: IScoreCalculationOptions, attributes: IBeatmapAttributes): Promise<IScore> {
-    const { scoreInfo, replayURL } = options;
+    const { scoreInfo, replayBuffer } = options;
 
     if (scoreInfo) {
       const info = toScoreInfo(scoreInfo);
@@ -165,7 +165,7 @@ export class ScoreCalculator {
       return new Score(info, replay);
     }
 
-    if (!replayURL) {
+    if (!replayBuffer) {
       const info = this._scoreSimulator.simulate({ ...options, attributes });
       const replay = null;
 
